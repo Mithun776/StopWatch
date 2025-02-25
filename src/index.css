@@ -1,0 +1,128 @@
+/* Global styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f1f1f1; /* Soft light gray background */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Stopwatch container */
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Stopwatch hover effect */
+.stopwatch:hover {
+    transform: scale(1.05);
+}
+
+/* Display settings */
+.display {
+    font-size: 6rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #333; /* Darker text for readability */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+/* Controls container */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Buttons styling */
+.controls button {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    min-width: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.controls button:active {
+    transform: translateY(2px); /* Button pressed effect */
+}
+
+/* Start button */
+.start-button {
+    background-color: #4caf50; /* Fresh green */
+}
+
+.start-button:hover {
+    background-color: #388e3c; /* Darker green */
+}
+
+/* Stop button */
+.stop-button {
+    background-color: #f44336; /* Vibrant red */
+}
+
+.stop-button:hover {
+    background-color: #d32f2f; /* Darker red */
+}
+
+/* Reset button */
+.reset-button {
+    background-color: #2196f3; /* Bright blue */
+}
+
+.reset-button:hover {
+    background-color: #1976d2; /* Darker blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stopwatch {
+        padding: 30px;
+        width: 85%;
+    }
+
+    .display {
+        font-size: 4.5rem;
+    }
+
+    .controls button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stopwatch {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .display {
+        font-size: 4rem;
+    }
+
+    .controls button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
