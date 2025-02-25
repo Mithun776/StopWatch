@@ -1,5 +1,5 @@
 # Stopwatch App
-Live Preview - [Link](https://Mithun776.github.io/StopWatch)
+Live Preview - [Link](https://mithun776.github.io/StopWatch)
 
 This is a **Stopwatch** web application built using **Vite** and **React**. The app allows users to start, stop, and reset a stopwatch while displaying the time in minutes, seconds, and milliseconds. It is designed with a modern, responsive layout using **CSS** for styling.
 
